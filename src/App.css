@@ -1,7 +1,19 @@
 .App {
   text-align: center;
 }
-
+.btn{
+  padding: 10px 20px;
+  background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border: none;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  opacity: 0.6;
+  outline: none;
+}
+.btn:hover{
+  opacity: 1;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
