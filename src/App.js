@@ -6,7 +6,7 @@ function App() {
     <div className="App">
       <Header />
       <button type="button" className="btn">
-        Cambiar Titulo
+        Titulo Cambiado
       </button>
     </div>
   );
