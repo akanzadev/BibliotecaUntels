@@ -45,7 +45,14 @@
   outline: none;
   border: none;
   color: white;
-  padding: 10px 30px;
+  padding: 15px 30px;
+  border: 1px solid white;
+  cursor: pointer;
+}
+.home-text button:hover {
+  background-color: white;
+  border: 1px solid #e3b142;
+  color: #e3b142;
 }
 .home-img {
   flex-basis: 50%;
@@ -64,10 +71,25 @@
   .home-text {
     flex-basis: 100%;
   }
-
   .home-img {
     padding-top: 60px;
     flex-basis: 50%;
     margin: auto;
+  }
+}
+@media screen and (max-width: 425px) {
+  .home-text {
+    flex-basis: 100%;
+  }
+  .home-text p {
+    width: 100%;
+  }
+  .home-img {
+    padding: 60px 0px;
+    flex-basis: 90%;
+    margin: auto;
+  }
+  .home-img img {
+    width: 100%;
   }
 }

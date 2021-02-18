@@ -12,3 +12,12 @@
   border: 1px solid #e5e9ef;
   padding: 40px 100px;
 }
+@media screen and (max-width: 900px) {
+  .header{
+    padding: 0px;
+  }
+  .header-content {
+    width: 100%;
+    padding: 10px 50px;
+  }
+}
