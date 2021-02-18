@@ -1,13 +1,9 @@
 import "./App.css";
-import Header from "./components/Header/Header";
+import Home from "./Components/Home/Home";
 function App() {
-  
   return (
-    <div className="App">
-      <Header />
-      <button type="button" className="btn">
-        Cambiar Titulo
-      </button>
+    <div className="container">
+      <Home />
     </div>
   );
 }
