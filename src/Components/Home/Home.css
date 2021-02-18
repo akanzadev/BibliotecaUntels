@@ -37,16 +37,15 @@
   width: 70%;
   font-size: 16px;
   color: var(--colorPlomo);
-  text-transform: lowercase;
   padding: 20px 0px;
 }
-.home-text button{
-    background-color: #E3B142;
-    border-radius: 10px;
-    outline: none;
-    border: none;
-    color: white;
-    padding: 10px 30px;
+.home-text button {
+  background-color: #e3b142;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  color: white;
+  padding: 10px 30px;
 }
 .home-img {
   flex-basis: 50%;
@@ -59,4 +58,16 @@
 }
 .home-img__item img {
   width: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+  .home-text {
+    flex-basis: 100%;
+  }
+
+  .home-img {
+    padding-top: 60px;
+    flex-basis: 50%;
+    margin: auto;
+  }
 }
