@@ -1,0 +1,13 @@
+.header {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header-content {
+  width: 90%;
+  box-shadow: 2px 3px 15px 9px rgba(168, 183, 197, 1);
+  border: 1px solid #e5e9ef;
+  padding: 40px 100px;
+}

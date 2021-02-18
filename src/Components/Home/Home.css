@@ -3,7 +3,7 @@
   --colorPlomo: #a79c9cfd;
 }
 .home {
-  width: 100vw;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;

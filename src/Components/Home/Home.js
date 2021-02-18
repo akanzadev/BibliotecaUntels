@@ -7,14 +7,12 @@ const Home = () => {
       <div className="home">
         <div className="home-text">
           <h1>
-            ONLINE<strong>LIBRARY</strong>
+            ONLINE<strong>LIBRERIA</strong>
             <span>LANDING PAGE DESGIN</span>
           </h1>
           <p>
             LANDING LANDING LANDING LANDING LANDING LANDING LANDING LANDING
             LANDING LANDING LANDING LANDING LANDING LANDING LANDING LANDING
-            LANDING LANDING LANDING LANDING LANDING LANDING LANDING LANDING
-            LANDING LANDING LANDING LANDING LANDING LANDING
           </p>
           <button type="button">JOIN NOW</button>
         </div>
