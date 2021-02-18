@@ -1,0 +1,62 @@
+:root {
+  --colorAzul: #3c83c0;
+  --colorPlomo: #a79c9cfd;
+}
+.home {
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.home-text {
+  flex-basis: 50%;
+  font-family: "Poppins", sans-serif;
+}
+.home-text h1 {
+  color: var(--colorAzul);
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  letter-spacing: 1.5px;
+  font-size: 24px;
+  font-weight: normal;
+  font-weight: 800;
+}
+.home-text h1 strong {
+  font-weight: 800;
+  font-size: 55px;
+}
+.home-text h1 span {
+  font-size: 30px;
+  font-weight: 300;
+}
+
+.home-text p {
+  width: 70%;
+  font-size: 16px;
+  color: var(--colorPlomo);
+  text-transform: lowercase;
+  padding: 20px 0px;
+}
+.home-text button{
+    background-color: #E3B142;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    color: white;
+    padding: 10px 30px;
+}
+.home-img {
+  flex-basis: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.home-img__item {
+  flex-basis: 50%;
+}
+.home-img__item img {
+  width: 100%;
+}
