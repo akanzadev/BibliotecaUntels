@@ -8,6 +8,7 @@
 }
 .header-content {
   width: 90%;
+  border-radius: 10px;
   box-shadow: 2px 3px 15px 9px rgba(168, 183, 197, 1);
   border: 1px solid #e5e9ef;
   padding: 40px 100px;
