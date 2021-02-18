@@ -6,7 +6,8 @@ const Footer = () => {
         <Fragment>
             <section className="seccion-contacto">
                 <div className="contact-container">
-                    <div classNameName="contactinfo">
+                    <div className="contactinfo">
+                        <div>
                             <h2>Contact Info</h2>
                                 <ul className="info">
                                     <li>
@@ -33,6 +34,7 @@ const Footer = () => {
                                     <li><a href=""><i className="fab fa-pinterest-square"></i></a></li>
                                     <li><a href=""><i className="fab fa-linkedin"></i></a></li>
                                 </ul>
+                            </div>
                     </div>
                         
                         <div className="cardForm">

@@ -11,6 +11,7 @@
     min-height: 80vh;
     background-color: var(--fondo1);
     display: flex;
+    overflow: hidden;
 }
 
 .seccion-contacto:before{
@@ -46,6 +47,7 @@
     justify-content: space-between;
     box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
     font-family: 'Roboto',sans-serif;
+    transition: all 0.5s;
 }
 
 .seccion-contacto .contact-container .contactinfo h2{
@@ -128,6 +130,7 @@
     height: 100%;
     z-index: 1;
     box-shadow: 0 50px 50px rgba(0, 0, 0, 0.5);
+    transition: all 0.5s;
 }
 
 .seccion-contacto .contact-container .cardForm h2{
@@ -208,4 +211,75 @@
 
 .seccion-contacto .contact-container .cardForm .formBox .inputBox input[type="submit"]:hover{
     background-color: #ff568c;
+}
+
+@media(max-width:991px){
+    
+.seccion-contacto .contact-container .contactinfo{
+    transform: translateX(-100%);
+}
+
+.seccion-contacto .contact-container .cardForm{
+    position: relative;
+    margin: auto;
+    left: 20px;
+    padding: 0px;
+    padding: 20px 100px;
+    width: 60%;
+}
+
+}
+
+@media(max-width:768px){
+
+    .seccion-contacto .contact-container .cardForm{
+        position: relative;
+        margin: auto;
+        left: 1%;
+        padding: 0px;
+        padding: 20px 100px;
+        width: 50%;
+    }
+
+    .seccion-contacto .contact-container .cardForm .formBox{
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding-top: 30px;
+    }
+    /* .seccion-contacto .contact-container .cardForm .formBox .inputBox{
+        position: relative;
+        margin: 0 0 40px 0;
+    } */
+    .seccion-contacto .contact-container .cardForm .formBox .inputBox.w50{
+        width: 90%;
+    }
+}
+
+@media(max-width:576px){
+    .seccion-contacto .contact-container .cardForm{
+        position: relative;
+        margin: auto;
+        padding: 0px;
+        padding: 20px 100px;
+        width: 40%;
+    }
+
+    .seccion-contacto .contact-container .cardForm .formBox{
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding-top: 30px;
+    }
+
+    .seccion-contacto .contact-container .cardForm .formBox .inputBox.w50{
+        width: 100%;
+    }
+    .seccion-contacto .contact-container .cardForm .formBox .inputBox input[type="submit"]{
+        margin: 0 50px
+    }
 }
