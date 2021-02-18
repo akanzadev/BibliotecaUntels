@@ -11,6 +11,9 @@ const Nav = () => {
             title="biblioteca"
           />
         </figure>
+        <div className="nav-hamburger">
+          <i class="fas fa-bars"></i>
+        </div>
         <ul className="nav-list">
           <li className="nav-list__item">
             <a href="#">Home</a>
