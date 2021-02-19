@@ -1,0 +1,69 @@
+:root {
+  --colorAzulDeInput: #3c83c0;
+  --colorDeLetra: rgb(56, 53, 53);
+  --colorDeFondo: #fff;
+  --colorDeLetraDeAlerta: #91464d;
+  --colorDeFondoDeAlerta: #f8d7da;
+}
+.book-search {
+  padding: 30px 0px;
+  max-width: 100%;
+}
+.form-book {
+  max-width: 100%;
+}
+
+.form-book .alert {
+  padding: 15px 20px;
+  background-color: var(--colorDeFondoDeAlerta);
+  color: var(--colorDeLetraDeAlerta);
+}
+.form-book .alert span {
+  color: var(--colorDeLetraDeAlerta);
+  font-weight: bold;
+}
+.form-book__control {
+  padding: 10px 0px;
+  position: relative;
+  width: 100%;
+  background-color: var(--colorDeFondo);
+}
+.form-book__control input[type="text"] {
+  transition: all 500ms ease-out;
+  width: 100%;
+  padding: 15px 50px;
+  outline: none;
+  border-radius: 0px;
+  border: 1px solid var(--colorAzulDeInput);
+  font-size: 18px;
+  box-shadow: 0px 0px 5px var(--colorAzulDeInput);
+  opacity: 0.7;
+  color: var(--colorDeLetra);
+}
+.form-book__control label {
+  cursor: pointer;
+  transition: all 500ms ease-out;
+  opacity: 0.5;
+  color: var(--colorDeLetra);
+  position: absolute;
+  padding: 15px 20px;
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  top: 50%;
+  left: 0px;
+  transform: translate(0%, -50%);
+  font-size: 20px;
+}
+.form-book__control input[type="text"]:focus {
+  opacity: 1;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px var(--colorAzulDeInput);
+  border: 1px solid var(--colorAzulDeInput);
+}
+.form-book__control input[type="text"]:focus ~ label {
+  opacity: 1;
+}
+.form-book__control input[type="text"]:focus ~ label:hover i {
+  color: var(--colorAzulDeInput);
+}
