@@ -1,285 +1,110 @@
 :root{
-    --fondo1:rgb(69, 114, 116);
-    --fondo2:#03a9f4;
-    --fondoContact:#20495c;
-    --fondoCard:#fff;
+    --footer_link: white   ;
+    --background_footer: #2b2b2b;
 }
-.seccion-contacto{
+
+.footer{
     position: relative;
-    justify-content: center;
-    align-items: center;
-    min-height: 80vh;
-    background-color: var(--fondo1);
+    bottom: 0;
+    background: #fff;
+    color: var(--footer_link);
+
+    border-radius: 0px 0px 0px 12px ;
+}
+
+.footer-content{
     display: flex;
-    overflow: hidden;
+    justify-content: space-around;
+    border-top: 2px solid #1f1f1e;
+    background: var(--background_footer);
 }
 
-.seccion-contacto:before{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 50%;
-    height: 100%;
-    background-color: var(--fondo2);
+.footer-content__items{
+    padding-top: 40px;
 }
 
-/* Estilos para el contactinfo*/
-
-.seccion-contacto .contact-container{
-    position: relative;
-    min-width: 1100px;
-    min-height: 550px;
+.footer-content__items ul {
     display: flex;
-    z-index: 100px;
-}
-
-.seccion-contacto .contact-container .contactinfo{
-    position: absolute;
-    top: 40px;
-    width: 350px;
-    height: calc(100%-80px);
-    background-color: var(--fondoContact);
-    z-index: 1000;
-    padding: 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
-    font-family: 'Roboto',sans-serif;
-    transition: all 0.5s;
-}
-
-.seccion-contacto .contact-container .contactinfo h2{
-    color: aliceblue;
-    font-size: 24px;
-    font-weight: 500;
-}
-
-.seccion-contacto .contact-container .contactinfo .info{
-    position: relative;
-    margin: 20px 0;
-}
-
-.seccion-contacto .contact-container .contactinfo .info li{
-    position: relative;
-    list-style: none;
-    display: flex;
-    margin: 20px 0;
-    cursor: pointer;
-    align-items: flex-start;
-}
-
-.seccion-contacto .contact-container .contactinfo .info li span:nth-child(1){
-    width: 30px;
-    min-height: 30px;
-}
-
-.seccion-contacto .contact-container .contactinfo .info li span:nth-child(1) i{
-    max-width: 100%;
-    filter: invert(1);
-    opacity: 0.5;
-}
-
-.seccion-contacto .contact-container .contactinfo .info li span:nth-child(2){
-    color: #fff;
-    margin-left: 10px;
-    font-weight: 300;
-    opacity: 0.5;
-}
-
-.seccion-contacto .contact-container .contactinfo .info li:hover span:nth-child(1) img,
-.seccion-contacto .contact-container .contactinfo .info li:hover span:nth-child(2){
-    opacity: 1;
-}
-
-/* Estilos para los Social icons */
-.seccion-contacto .contact-container .contactinfo .sci{
-    position: relative;
-    display: flex;
-}
-
-.seccion-contacto .contact-container .contactinfo .sci li{
-    list-style: none;
-    margin-right: 15px;
-}
-
-.seccion-contacto .contact-container .contactinfo .sci li a{
-    text-decoration: none;
-    /* color: #03a9f4; */
-    display: block;
-    width: 20%;
-}
-
-.seccion-contacto .contact-container .contactinfo .sci li a i{
-    filter: invert(1);
-    opacity: 0.5;
-}
-.seccion-contacto .contact-container .contactinfo .sci li:hover a i{
-    opacity: 1;
-}
-
-/* Estilos para la card */
-.seccion-contacto .contact-container .cardForm{
-    position: absolute;
-    padding: 20px 50px;
-    background-color: var(--fondoCard);
-    left: 250px;
-    padding-left: 250px;
-    width: calc(100%-150px);
-    height: 100%;
-    z-index: 1;
-    box-shadow: 0 50px 50px rgba(0, 0, 0, 0.5);
-    transition: all 0.5s;
-}
-
-.seccion-contacto .contact-container .cardForm h2{
-    color: #0f3959;
-    font-size: 24px;
-    font-weight: 500;
-}
-
-.seccion-contacto .contact-container .cardForm .formBox{
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding-top: 30px;
-}
-
-.seccion-contacto .contact-container .cardForm .formBox .inputBox{
-    position: relative;
-    margin: 0 0 35px 0;
-}
-
-.seccion-contacto .contact-container .cardForm .formBox .inputBox.w50{
-    width: 37%;
-}
-
-.seccion-contacto .contact-container .cardForm .formBox .inputBox.w100{
-    width: 100%;
-}
-
-.seccion-contacto .contact-container .cardForm .formBox .inputBox input,
-.seccion-contacto .contact-container .cardForm .formBox .inputBox textarea{
-    width: 100%;
-    padding: 5px 0;
-    font-size: 18px;
-    font-weight: 300;
-    color: #333;
-    resize: none;
-    border: none;
-    border-bottom: 1px solid #777;
-    outline: none;
-}
-
-.seccion-contacto .contact-container .cardForm .formBox .inputBox textarea{
-    min-height: 120px;
-}
-
-.seccion-contacto .contact-container .cardForm .formBox .inputBox span{
-    position: absolute;
-    left: 0;
-    padding: 5px 0;
-    font-size: 18px;
-    font-weight: 300;
-    color: #333;
-    transition: 0.5s;
-    pointer-events: none;
-}
-
-.seccion-contacto .contact-container .cardForm .formBox .inputBox input:focus ~ span, 
-.seccion-contacto .contact-container .cardForm .formBox .inputBox textarea:focus ~ span,
-.seccion-contacto .contact-container .cardForm .formBox .inputBox input:valid ~ span, 
-.seccion-contacto .contact-container .cardForm .formBox .inputBox textarea:valid ~ span{
-    transform: translateY(-20px);
-    font-size: 12px;
-    font-weight: 400;
-    letter-spacing: 1px;
-    color: #ff568c;
-}
-
-.seccion-contacto .contact-container .cardForm .formBox .inputBox input[type="submit"]{
-    position: relative;
-    cursor: pointer;
-    background-color: #0f3959;
-    color: #fff;
-    border: none;
-    max-width: 150px;
-    padding: 12px;
-}
-
-.seccion-contacto .contact-container .cardForm .formBox .inputBox input[type="submit"]:hover{
-    background-color: #ff568c;
-}
-
-@media(max-width:991px){
+    justify-content: space-evenly;
     
-.seccion-contacto .contact-container .contactinfo{
-    transform: translateX(-100%);
 }
 
-.seccion-contacto .contact-container .cardForm{
-    position: relative;
-    margin: auto;
-    left: 20px;
-    padding: 0px;
-    padding: 20px 100px;
-    width: 60%;
+.footer-content__items ul li a{
+    text-decoration: none;
 }
 
+ .fa-facebook-square{
+     color: #0777E9;
+     font-size: 40px;
+     margin-right: 20px;
+ }
+ .fa-instagram{
+     background-image: linear-gradient(0deg, rgba(64,93,230,1) 0%, rgba(91,81,216,1) 4%, rgba(131,58,180,1) 16%, rgba(193,53,132,1) 38%, rgba(225,48,108,1) 56%, rgba(253,29,29,1) 71%, rgba(245,96,64,1) 83%, rgba(247,119,55,1) 91%, rgba(252,175,69,1) 96%, rgba(255,220,128,1) 100%); 
+    -webkit-text-fill-color: transparent;
+    color:#fff;
+    background-clip: text;
+    font-size: 40px;
+ }
+
+.footer__link{
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 10px;
 }
 
-@media(max-width:768px){
+.footer__link a{
+    text-decoration: none;
+    color: var(--footer_link);
+    border-bottom: 1px solid  transparent;
+    padding: 5px;
 
-    .seccion-contacto .contact-container .cardForm{
-        position: relative;
-        margin: auto;
-        left: 1%;
-        padding: 0px;
-        padding: 20px 100px;
-        width: 50%;
-    }
+}
+.footer__link a i{
+    padding-right: 5px;
+}
 
-    .seccion-contacto .contact-container .cardForm .formBox{
-        position: relative;
-        display: flex;
-        justify-content: space-between;
+.footer__link a:hover{
+    border-bottom: 1px solid orange;
+}
+
+.footer-name{
+    padding-top: 0;
+    margin-top: 0;
+    display: flex;
+    justify-content: space-around;
+    background: var(--background_footer);
+    padding: 10px;
+}
+
+@media screen and (max-width:576px){
+    .footer-content{
         flex-direction: column;
-        flex-wrap: wrap;
-        padding-top: 30px;
-    }
-    /* .seccion-contacto .contact-container .cardForm .formBox .inputBox{
-        position: relative;
-        margin: 0 0 40px 0;
-    } */
-    .seccion-contacto .contact-container .cardForm .formBox .inputBox.w50{
-        width: 90%;
-    }
-}
-
-@media(max-width:576px){
-    .seccion-contacto .contact-container .cardForm{
-        position: relative;
-        margin: auto;
-        padding: 0px;
-        padding: 20px 100px;
-        width: 40%;
     }
 
-    .seccion-contacto .contact-container .cardForm .formBox{
-        position: relative;
+    .footer-content__items{
+        margin: 0%;
+        padding: 0%;
+        
+    }
+    .footer-content__items ul {
         display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-        flex-wrap: wrap;
-        padding-top: 30px;
+        justify-content: center;
     }
+    h4{
+        display: flex;
+        justify-content: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-top: 20px;
+    }
+    .footer__link{
+        display: flex;
+        justify-content: center;
 
-    .seccion-contacto .contact-container .cardForm .formBox .inputBox.w50{
-        width: 100%;
+      
     }
-    .seccion-contacto .contact-container .cardForm .formBox .inputBox input[type="submit"]{
-        margin: 0 50px
+    p{
+        display: flex;
+        justify-content: center;
     }
 }
