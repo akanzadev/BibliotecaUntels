@@ -26,7 +26,7 @@ const Nav = () => {
           </div>
           <ul className={show ? `nav-list show` : `nav-list`}>
             <li className="nav-list__item">
-              <a href="#">
+              <a href="#footer">
                 <i className="fas fa-home"></i>Home
               </a>
             </li>
@@ -36,7 +36,7 @@ const Nav = () => {
               </a>
             </li>
             <li className="nav-list__item">
-              <a href="#">
+              <a href="#footer">
                 <i className="fas fa-address-card"></i>About
               </a>
             </li>

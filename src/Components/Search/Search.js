@@ -14,7 +14,6 @@ const Search = () => {
       setalert(false);
     }
   };
-
   const OnChangeInput = (e) => {
     let book = e.target.value;
     setbook(book);
@@ -22,7 +21,7 @@ const Search = () => {
   };
   return (
     <section className="book-search">
-      <form className="form-book" onSubmit={HandleSubmit}>
+      <form className="form-book" onSubmit={HandleSubmit} autocomplete="off">
         <div className="form-book__control">
           <input
             id="book"
@@ -32,7 +31,10 @@ const Search = () => {
             onChange={OnChangeInput}
           ></input>
           <label for="book">
-            <i className="fa fa-search" aria-hidden="true"></i>
+            <i
+              className={book ? "fa fa-search rotateSearch" : "fa fa-search "}
+              aria-hidden="true"
+            ></i>
           </label>
         </div>
         {alert ? (
