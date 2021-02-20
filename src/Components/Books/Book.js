@@ -17,7 +17,7 @@ const Book = ({titulo,imagen}) => {
         <figure>
             <img src={imagen} alt="book"/>
         </figure>
-        <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, natus. 56</h4>
+        <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, natus. 56 3287498327</h4>
     </div> 
 );
 };
