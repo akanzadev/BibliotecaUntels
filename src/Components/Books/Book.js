@@ -13,12 +13,11 @@ const Book = ({titulo,imagen}) => {
     
     return (
     <div className="card-book">
-        <h2>hola</h2>
         <h3>{titulo}</h3>
         <figure>
             <img src={imagen} alt="book"/>
         </figure>
-        <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, natus.</h4>
+        <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, natus. 56</h4>
     </div> 
 );
 };
