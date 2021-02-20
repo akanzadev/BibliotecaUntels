@@ -13,6 +13,7 @@ const Book = ({titulo,imagen}) => {
     
     return (
     <div className="card-book">
+        <h2>hola</h2>
         <h3>{titulo}</h3>
         <figure>
             <img src={imagen} alt="book"/>
