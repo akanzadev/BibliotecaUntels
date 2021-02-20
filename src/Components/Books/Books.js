@@ -1,6 +1,7 @@
 import React from "react";
 import "./Book.css"
 import Book from "./Book";
+import {VanillaTilt} from "vanilla-tilt"
 const Books = () => {
     let books =[
         {
@@ -49,7 +50,7 @@ const Books = () => {
             <div className="grid-book">
                 <h2>Libros Clásicos</h2>
                 {books.map((book)=>(
-                        <Book titulo={book.titulo} imagen={book.img}/>
+                        <Book titulo={book.titulo} key={book.id} imagen={book.img}/>
                     ))
                 }
             </div>
