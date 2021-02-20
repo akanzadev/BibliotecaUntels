@@ -1,6 +1,6 @@
 .grid-book{
     width: 100%;
-    height: 90vh;
+    height: auto;
     padding: 20px 50px;
     background-color: rgb(198, 206, 206);
     display:grid;
@@ -16,7 +16,7 @@
 
 .card-book{
     width: 250px;
-    height: 350px;
+    height: auto;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -29,6 +29,7 @@
     box-shadow:  20px 20px 60px #bebebe,
              -20px -20px 60px #ffffff;
     transition: all 0.5s ease;
+    overflow: hidden;
 }
 
 .card-book img{
@@ -38,13 +39,17 @@
     box-shadow:  20px 20px 60px #bebebe,
              -20px -20px 60px #ffffff;
     border: solid 1px;
+    
+    /* transform: perspective(1000px);
+    transform: translateZ(20px); */
 }
 
 .card-book:hover img{
     cursor: pointer;
     background-color: #bdbdbd;
-    transform: rotate(15deg) scale(1.1);
-    /* transform: scale(1.2); */
+    transform:  scale(1.1) perspective(1000px);
+    transform-style: preserve-3d;
+    /* transform: scale(1.2); rotate(15deg)*/
 }
 .card-book:hover {
     cursor: pointer;
