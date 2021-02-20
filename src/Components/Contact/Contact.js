@@ -4,7 +4,7 @@ import "./Contact.css";
 const Footer = () => {
     return ( 
         <Fragment>
-            <section id="contact" className="seccion-contacto">
+            <section className="seccion-contacto">
                 <div className="contact-container">
                     <div className="contactinfo">
                         <div>
