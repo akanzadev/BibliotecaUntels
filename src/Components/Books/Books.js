@@ -1,12 +1,11 @@
 import React from "react";
 import "./Book.css"
 import Book from "./Book";
-import {VanillaTilt} from "vanilla-tilt"
 const Books = () => {
     let books =[
         {
             id:2,
-            titulo:"titulo 2",
+            titulo:"titulo 2 La venganza de cristian y su grupo de ads aprobarán xd",
             img:"https://i.pinimg.com/originals/21/e1/7b/21e17ba115e4dd814cb1de44ac484533.jpg",
         },
         {
