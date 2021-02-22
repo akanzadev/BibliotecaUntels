@@ -1,14 +1,6 @@
 import React, { Fragment,useEffect } from "react";
 import "./Book.css"
-const Book = ({titulo,imagen}) => {
-    // useEffect(() => {
-    //     VanillaTilt.init(document.querySelectorAll(".card-book"), {
-    //         max: 25,
-    //         speed: 400,
-    //         glare:true,
-    //         "max-glare":1,
-    //         });
-    // }, [])
+const Book = ({titulo,imagen,description,episode}) => {
     window.addEventListener('scroll',()=>{
     
         let card=document.getElementsByClassName('card-book');
@@ -30,8 +22,8 @@ const Book = ({titulo,imagen}) => {
             <img src={imagen} alt="book"/>
         </figure>
         <div className="content-card">
-                <h3 className="autor">Robert e.</h3>
-                <h4 className="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, natus.</h4>
+                <h3 className="autor">{episode}</h3>
+                <h4 className="description">{description}</h4>
         </div>
     </div> 
 );
