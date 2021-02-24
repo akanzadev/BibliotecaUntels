@@ -1,0 +1,127 @@
+
+@mixin response-to($width) {
+    @media(max-width: $width) {
+      @content;
+    }
+  }
+
+@mixin displayflex($display,$direction,$content,$align) {
+    display: $display;
+    flex-direction: $direction;
+    justify-content: $content;
+    align-items: $align;
+}
+
+.container-book{
+    @include  displayflex(flex,column,center,center);
+    .grid-book{
+        width: 100%;
+        height: auto;
+        padding: 2rem 5rem;
+        background-color: rgb(198, 206, 206);
+        display:grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1rem;
+        justify-content: center;
+        transition: all 1s ease-in-out;
+        h2{
+            text-align: center;
+            grid-column: 1/4;
+            font-size:4rem;
+            font-family: cursive;
+            z-index: 140;
+            text-shadow: 0.5rem 0.3rem 0.7rem rgba(173, 173, 173, 0.7);
+        }
+        
+        @include response-to(768px){
+            &{
+                grid-template-columns: repeat(2, 1fr);
+            }  
+        
+            & h2{
+                grid-column: 1/3;
+            }
+          };
+          @include response-to(576px){
+            &{
+                grid-template-columns: repeat(1, 1fr);
+            }  
+        
+            & h2{
+                grid-column: 1/2;
+            }
+        };
+    }  
+}
+
+.card-book{
+    width: 16rem;
+    height: 21rem;
+    margin: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem;
+    background-color: #e0e0e0;
+    border-radius: 2rem;
+    border: 0.1rem solid #dbd9d9;
+    box-shadow:  2rem 2rem 6rem #bebebe,
+             -2rem -2rem 6rem #ffffff;
+    transition: all 0.5s ease;
+    overflow: hidden;
+    .content-card{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 2rem;
+        background:rgba(146, 149, 149, 0.479);
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        transition: opacity 0.5s ease;
+
+    }
+    img{
+        width: 10rem;
+        height: 15rem;
+        transition: transform 0.5s ease;
+        box-shadow:  2rem 2rem 6rem #bebebe,
+                 -2rem -2rem 6rem #ffffff;
+        border: solid 0.01rem;
+    }
+    .title{
+        text-align: center;
+    }
+    h3{
+        font-size: 1.2rem;
+    }
+    &:hover img{
+        width: 10rem;
+        height: 15rem;
+        transition: transform 0.5s ease;
+        box-shadow:  2rem 2rem 6rem #bebebe,
+                 -2rem -2rem 6rem #ffffff;
+        border: solid 0.01rem;
+    }
+    &:hover .title{
+        text-align: center;
+    }
+    &:hover {
+        cursor: pointer;
+        background-color: #bdbdbd;
+        transform: translateY(-0.5rem);
+    }
+    &:hover .content-card{
+        opacity: 1;
+    }
+}
+
+.active4{
+    transform: scale(0);
+}
+

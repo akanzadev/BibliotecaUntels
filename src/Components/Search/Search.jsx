@@ -1,16 +1,16 @@
 import React, { useState } from "react";
 import "./Search.css";
 //rafc
-const Search = () => {
+const Search = ({setsearch}) => {
   const [book, setbook] = useState("");
   const [alert, setalert] = useState(false);
   const HandleSubmit = (e) => {
     e.preventDefault();
-    if (book === "") {
-      console.log("Ingrese valores");
+    if (book === "" || book.length<3) {
       setalert(true);
+      console.log('gato')
     } else {
-      console.log("todo ok");
+      setsearch(book);
       setalert(false);
     }
   };
@@ -18,6 +18,7 @@ const Search = () => {
   const OnChangeInput = (e) => {
     let book = e.target.value;
     setbook(book);
+    // setsearch(book);
     console.log(book);
   };
   return (
@@ -30,6 +31,7 @@ const Search = () => {
             placeholder="Search Book Here..."
             value={book}
             onChange={OnChangeInput}
+            autoComplete="false"
           ></input>
           <label for="book">
             <i className="fa fa-search" aria-hidden="true"></i>

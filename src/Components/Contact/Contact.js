@@ -1,6 +1,7 @@
 import { Fragment } from "react";
 
-import "./Contact.css";
+// import "./Contact.css";
+import "./Contact.scss";
 const Footer = () => {
     return ( 
         <Fragment>

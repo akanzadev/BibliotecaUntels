@@ -1,5 +1,6 @@
 import React, { Fragment,useEffect } from "react";
-import "./Book.css"
+// import "./Book.css";
+import "./Books.scss"
 const Book = ({titulo,imagen,description,episode}) => {
     window.addEventListener('scroll',()=>{
     
